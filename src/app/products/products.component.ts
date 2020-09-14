@@ -19,8 +19,8 @@ export class ProductsComponent implements OnInit {
     },
     {
       id: '2',
-      image: 'assets/images/comedero.png',
-      title: 'comedero',
+      image: 'assets/images/baño.png',
+      title: 'Baño',
       price: 8000,
       description: 'bla bla bla bla bla'
     },
@@ -33,29 +33,29 @@ export class ProductsComponent implements OnInit {
     },
     {
       id: '4',
-      image: 'assets/images/pañoleta.png',
-      title: 'pañoleta',
-      price: 8000,
-      description: 'bla bla bla bla bla'
-    },
-    {
-      id: '5',
       image: 'assets/images/collar.png',
       title: 'Collar',
       price: 8000,
       description: 'bla bla bla bla bla'
     },
     {
-      id: '6',
-      image: 'assets/images/baño.png',
-      title: 'Baño',
+      id: '5',
+      image: 'assets/images/comedero.png',
+      title: 'Comedero',
       price: 8000,
       description: 'bla bla bla bla bla'
     },
     {
-      id: '7',
-      image: 'assets/images/comida-perro.png',
+      id: '6',
+      image: '../assets/images/comida-perro.png',
       title: 'Comida',
+      price: 8000,
+      description: 'bla bla bla bla bla'
+    },
+    {
+      id: '6',
+      image: '../assets/images/pañoleta.png',
+      title: 'Pañoleta',
       price: 8000,
       description: 'bla bla bla bla bla'
     },
@@ -63,7 +63,12 @@ export class ProductsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+  }
+
+  clickProduct(id: number) {
+    console.log('product');
+    console.log(id);
   }
 
 }
